@@ -1,0 +1,35 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  background-color: darkgreen;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+span {
+  font-size: 2rem;
+  padding: 5px;
+}
