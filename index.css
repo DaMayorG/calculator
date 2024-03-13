@@ -1,35 +1,66 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#display {
+  width: 100%;
+  padding: 10px;
+  font-size: 4rem;
+  text-align: left;
+  border: none;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+h3 {
+  color: white;
   text-align: center;
 }
 
-h1{
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+#calculator {
+  background-color: #101010;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-h2{
-  font-size: 50px;
-  margin-top: 0;
-  margin-bottom: 20px;
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 25px;
 }
 
 button {
-  border: none;
-  padding: 10px 30px;
-  color: white;
-  background-color: darkgreen;
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
-  font-size: medium;
+  border: 1px solid white;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 2rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 button:active {
   transform: scale(0.95);
 }
 
-span {
-  font-size: 2rem;
-  padding: 5px;
+button:hover {
+  background-color: #3f3f3f;
+}
+
+.operator-btn {
+  background-color: darkblue;
+}
+
+.operator-btn:hover {
+  background-color: rgb(3, 3, 219);
 }
