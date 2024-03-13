@@ -1,28 +1,19 @@
-let num1 = 8
-let num2 = 2
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
+const display = document.getElementById("display")
 
-
-
-let sumEl = document.getElementById("sum-el")
-
-function add(){
-  let result = num1 + num2
-  sumEl.textContent = "Sum:" + result
+function appendToDisplay(input) {
+  display.value += input
 }
 
-function subtract(){
-  let result = num1 - num2
-  sumEl.textContent = "Sum:" + result
+function clearDisplay() {
+  display.value = ""
 }
 
-function divide(){
-  let result = num1 / num2
-  sumEl.textContent = "Sum:" + result
+function calculate() {
+  try {
+    display.value = eval(display.value)
+  }
+  catch(error) {
+    display.value = "Rubbish"
+  }
 }
 
-function multiply(){
-  let result = num1 * num2
-  sumEl.textContent = "Sum:" + result
-}
